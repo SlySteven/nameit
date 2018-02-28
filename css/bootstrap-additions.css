@@ -1,0 +1,98 @@
+select, option {
+  background-color: transparent;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  text-align: center;
+  text-align-last: center;
+}
+.btn-outline {
+  border-color: #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: transparent;
+  margin: 0 10px 10px 0;
+}
+.new-game,
+#game-phase-main {
+  display: none;
+}
+.card {
+  text-align: center;
+}
+.timer-guess,
+.timer-vote {
+  font-size: 30px;
+}
+.low-timer {
+  color: red;
+}
+.glyphicon-pause, .glyphicon-play {
+  top: -2px;
+  left: 5px;
+}
+#game-options {
+  margin-top: 25px;
+}
+.center {
+  text-align: center;
+}
+.short {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.row {
+  margin: 0;
+}
+#game-phase-landing p {
+  text-align: justify;
+}
+.category-score,
+.answer-buttons {
+  display: inline; /* Will .show() turn it inline? Or block? Do we have to hide it first for it to remember? */
+}
+.score-card,
+.extra-rules {
+  display: none;
+}
+.score-card,
+.top-info {
+  font-size: 22px;
+}
+.highlight {
+  color: orange;
+}
+.score-card,
+.answer-card,
+.top-info {
+  margin-bottom: 25px;
+}
+.category-card p {
+  margin-bottom: 5px;
+}
+.category-input {
+  text-align: center;
+}
+.category-input[readonly],
+.category-input[readonly] {
+  background: lightgrey;
+}
+.category-score {
+  padding: 0 30px 0 10px;
+}
+.panel {
+  width: 100%;
+  background-color: transparent;
+}
+.panel-body {
+  padding: 0;
+}
+.jumbotron {
+  width: 100%;
+}
+.score-nonzero[readonly] {
+  background: limegreen;
+}
+.score-zero[readonly] {
+  background: indianred;
+}
