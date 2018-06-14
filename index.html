@@ -31,7 +31,7 @@
       <div class="row">
           <div class="panel panel-info">
             <div class="panel-body">
-              <div class="card"> 
+              <div class="card">
     <p>You'll have three minutes to name something in each of ten categories. Answers must start with a particular letter. For example, if the letter is C for "Items In A Refrigerator," you could answer "Cucumber," "Cool Whip," or "Cold Cut."</p>
     <p>Repeating letters gives an extra point per instance. No repeating parts of answers. Players can veto answers with a vote. <a id="extra-rules">There are a few more advanced rules as well.</a></p>
     <div class="extra-rules">
@@ -42,7 +42,7 @@
       <hr>
     </div>
     <p>Gather up your players, then hit SYNC at the same time.</p>
-    <button type="button" class="btn btn-outline" id="button-ready">Sync Game ID</button> 
+    <button type="button" class="btn btn-outline" id="button-ready">Sync Game ID</button>
     <p>When everyone has the same Game ID (<span class="game-id highlight"></span>), hit START at the same time!</p>
     <button type="button" class="btn btn-outline" id="button-start">Start!</button>
   </div>
@@ -54,7 +54,7 @@
       <div class="row">
           <div class="panel panel-info">
             <div class="panel-body">
-              <div class="card top-info highlight"> 
+              <div class="card top-info highlight">
                 <p><span class="timer">3:00</span><button type="button" class="btn btn-default glyphicon glyphicon-pause" id="timer-control"></button></p>
                 <p>Letter: <span class="letter"></span></p>
               </div><!-- /.card -->
@@ -172,7 +172,7 @@
       <div class="row">
           <div class="panel panel-info">
             <div class="panel-body">
-              <div class="card"> 
+              <div class="card">
       <p><em>A game by <a href="http://www.steven.li/" target="_blank">Steven Li</a>. Based off the game <a href="https://boardgamegeek.com/boardgame/2381/scattergories" target="_blank">Scattergories</a>. If you had fun, <a href="https://twitter.com/intent/tweet?text=www.steven.li%2Fnameit" target="_blank">tweet about it</a> or <a href="http://eepurl.com/cxkP6j" target="_blank">sign up for news</a>.</em></p>
               </div><!-- /.card -->
             </div><!-- /.panel-body -->
@@ -189,28 +189,42 @@
     <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
     <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyATjc6DNALdSZR6LZEU_vR1OqxHurkS-4g",
-        authDomain: "name-it-9350e.firebaseapp.com",
-        databaseURL: "https://name-it-9350e.firebaseio.com",
-        projectId: "name-it-9350e",
-        storageBucket: "name-it-9350e.appspot.com",
-        messagingSenderId: "781239755851"
-      };
-      firebase.initializeApp(config);
-    </script>
+    // Initialize Firebase
+var config = {
+	apiKey: "AIzaSyATjc6DNALdSZR6LZEU_vR1OqxHurkS-4g",
+	authDomain: "name-it-9350e.firebaseapp.com",
+	databaseURL: "https://name-it-9350e.firebaseio.com",
+	projectId: "name-it-9350e",
+	storageBucket: "name-it-9350e.appspot.com",
+	messagingSenderId: "781239755851",
+};
+firebase.initializeApp(config);
+</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/game.js"></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+	i["GoogleAnalyticsObject"] = r;
+	(i[r] =
+		i[r] ||
+		function() {
+			(i[r].q = i[r].q || []).push(arguments);
+		}),
+		(i[r].l = 1 * new Date());
+	(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+	a.async = 1;
+	a.src = g;
+	m.parentNode.insertBefore(a, m);
+})(
+	window,
+	document,
+	"script",
+	"https://www.google-analytics.com/analytics.js",
+	"ga"
+);
 
-      ga('create', 'UA-96581512-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+ga("create", "UA-96581512-1", "auto");
+ga("send", "pageview");
+</script>
   </body>
 </html>
