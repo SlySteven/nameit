@@ -1,5 +1,7 @@
 var fade_speed = 500;
 var game_duration = 180;
+var shortGameDuration = 60;
+var shortGameCategories = 5;
 //game_duration = 3; // For testing
 
 var time;
@@ -32,6 +34,9 @@ $(document).ready(function() {
 
 function startGame() {
 	console.log("Starting game.");
+	if ($("#shortGame:checked").length) {
+		shortenGame();
+	}
 	$("#game-phase-landing").hide(fade_speed);
 	$("html,body").animate({ scrollTop: 0 });
 
@@ -49,6 +54,14 @@ function startGame() {
 
 	$("#game-phase-main").show(fade_speed);
 	timer_id = startTimer(game_duration, clock, button);
+}
+
+function shortenGame() {
+	game_duration = shortGameDuration;
+	var categories = $(".card")
+		.not(".score-card")
+		.not(".new-game");
+	categories.slice((shortGameCategories + 1) * 2).remove();
 }
 
 function startScoring() {

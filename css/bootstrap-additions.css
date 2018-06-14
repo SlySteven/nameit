@@ -98,3 +98,6 @@ option {
 .score-zero[readonly] {
 	background: indianred;
 }
+label {
+	font-size: 15px;
+}
