@@ -1,7 +1,7 @@
 var fade_speed = 500;
 var game_duration = 180;
 var shortGameDuration = 60;
-var shortGameCategories = 5;
+var shortGameCategories = 4;
 //game_duration = 3; // For testing
 
 var time;
