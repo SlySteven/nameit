@@ -6,6 +6,9 @@ option {
 	text-align: center;
 	text-align-last: center;
 }
+a {
+	cursor: pointer;
+}
 .btn-outline {
 	border-color: #ccc;
 	border-radius: 4px;
