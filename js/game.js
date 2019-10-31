@@ -60,6 +60,7 @@ function shortenGame() {
 	game_duration = shortGameDuration;
 	var categories = $(".card")
 		.not(".score-card")
+		.not(".footer")
 		.not(".new-game");
 	categories.slice((shortGameCategories + 1) * 2).remove();
 }
