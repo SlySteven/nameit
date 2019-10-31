@@ -20,7 +20,7 @@ var database = firebase.database();
 
 $(document).ready(function() {
 	$("html,body").animate({ scrollTop: 0 }); // When refreshing, don't start at the bottom of the page by the New Game button.
-	$("#extra-rules").on("click", function() {
+	$("#extra-rules-link").on("click", function() {
 		$(".extra-rules").show(fade_speed);
 	});
 	sync();
