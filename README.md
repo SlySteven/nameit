@@ -1,5 +1,5 @@
 # What is it?
-Name It is a web implementation of Scattergories. Players have three minutes to fill out ten categories with a word starting with a particular letter.
+[Name It](http://slim.games/nameit) is a web implementation of [Scattergories](https://boardgamegeek.com/boardgame/2381/scattergories). Players have three minutes to fill out ten categories with a word starting with a particular letter.
 
 Although this is a multiplayer game,
 * you need to speak with other players
